@@ -4,3 +4,4 @@ bcolz==1.2.1
 sklearn2
 PyYAML
 tqdm
+h5py==2.10.0
