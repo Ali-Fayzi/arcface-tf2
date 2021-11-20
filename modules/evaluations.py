@@ -21,11 +21,11 @@ def get_val_pair(path, name):
 def get_val_data(data_path):
     """get validation data"""
     lfw, lfw_issame = get_val_pair(data_path, 'lfw_align_112/lfw')
-    agedb_30, agedb_30_issame = get_val_pair(data_path,
-                                             'agedb_align_112/agedb_30')
-    cfp_fp, cfp_fp_issame = get_val_pair(data_path, 'cfp_align_112/cfp_fp')
-
-    return lfw, agedb_30, cfp_fp, lfw_issame, agedb_30_issame, cfp_fp_issame
+    # agedb_30, agedb_30_issame = get_val_pair(data_path,
+                                            #  'agedb_align_112/agedb_30')
+    # cfp_fp, cfp_fp_issame = get_val_pair(data_path, 'cfp_align_112/cfp_fp')
+    return lfw , lfw_issame
+    # return lfw, agedb_30, cfp_fp, lfw_issame, agedb_30_issame, cfp_fp_issame
 
 
 def ccrop_batch(imgs):
