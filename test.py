@@ -58,7 +58,8 @@ def main(_argv):
             cfg['embd_shape'], cfg['batch_size'], model, lfw, lfw_issame,
             is_ccrop=cfg['is_ccrop'])
         print("    acc {:.4f}, th: {:.2f}".format(acc_lfw, best_th))
-
+        with open('result.txt','w') as result:
+          result.write("acc {:.4f}, th: {:.2f}".format(acc_lfw, best_th))
         # print("[*] Perform Evaluation on AgeDB30...")
         # acc_agedb30, best_th = perform_val(
         #     cfg['embd_shape'], cfg['batch_size'], model, agedb_30,
